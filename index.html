@@ -9,65 +9,89 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #0f0f0f;
+    background: #0b0b0b;
     color: white;
 }
 
+/* TOP BAR */
 header {
-    background: #111;
     padding: 20px;
     text-align: center;
+    background: #111;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-nav {
-    background: #1c1c1c;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
+/* HERO */
 .hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 70px 20px;
-    background: linear-gradient(to right, #28a745, #0f0f0f);
+    background: linear-gradient(120deg, #28a745, #000);
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* BUTTON */
 .btn {
-    display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
+    padding: 15px 30px;
     background: #28a745;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+.btn:hover {
+    background: #1f8f39;
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
 .section {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
-    background: #1c1c1c;
-    margin: 15px auto;
+    background: #1a1a1a;
     padding: 20px;
-    max-width: 400px;
-    border-radius: 10px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+    background: #222;
+}
+
+/* FOOTER */
 footer {
-    background: #111;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -75,42 +99,41 @@ footer {
 <body>
 
 <header>
-<h1>💪 FitRise Fitness</h1>
+💪 FitRise Fitness
 </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="workouts.html">Workouts</a>
-</nav>
-
 <div class="hero">
-<h1>Build Muscle. Burn Fat. Get Strong.</h1>
-<p>Free workout plans for everyone.</p>
+<h1>Transform Your Body</h1>
+<p>Workout plans designed for real results</p>
+
 <a class="btn" href="workouts.html">Start Training</a>
 </div>
 
 <div class="section">
 <h2>🔥 Programs</h2>
 
+<div class="cards">
+
 <div class="card">
-<h3>Beginner Plan</h3>
-<p>Start your fitness journey.</p>
+<h3>Beginner</h3>
+<p>Start your fitness journey the right way.</p>
 </div>
 
 <div class="card">
-<h3>Fat Loss Plan</h3>
-<p>Burn fat and get lean.</p>
+<h3>Fat Loss</h3>
+<p>Burn calories and get lean fast.</p>
 </div>
 
 <div class="card">
-<h3>Muscle Plan</h3>
+<h3>Muscle Gain</h3>
 <p>Build strength and size.</p>
 </div>
 
 </div>
+</div>
 
 <footer>
-<p>© 2026 FitRise Fitness</p>
+© 2026 FitRise Fitness
 </footer>
 
 </body>
