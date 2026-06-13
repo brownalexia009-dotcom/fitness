@@ -9,27 +9,41 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #0f0f0f;
+    background: #0b0b0b;
     color: white;
 }
 
 header {
-    background: #111;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background: #111;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
 .card {
-    background: #1c1c1c;
+    background: #1a1a1a;
     margin: 20px 0;
     padding: 20px;
+    border-radius: 15px;
+}
+
+.exercise {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.exercise img {
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 h2 {
@@ -38,12 +52,12 @@ h2 {
 
 a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 10px 15px;
     background: #28a745;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 </style>
 </head>
@@ -56,34 +70,67 @@ a {
 
 <div class="container">
 
+<!-- BEGINNER -->
 <div class="card">
 <h2>Beginner Workout</h2>
-<ul>
-<li>10 Push-ups</li>
-<li>15 Squats</li>
-<li>20 Sit-ups</li>
-<li>30 sec Plank</li>
-</ul>
+
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1598971639058-a5b7e2a5b5f4?auto=format&fit=crop&w=200&q=80">
+<p>Push-ups — 10 reps</p>
 </div>
 
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=200&q=80">
+<p>Squats — 15 reps</p>
+</div>
+
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1594737625785-c7b3a1a2f2a1?auto=format&fit=crop&w=200&q=80">
+<p>Plank — 30 seconds</p>
+</div>
+
+</div>
+
+<!-- FAT LOSS -->
 <div class="card">
 <h2>Fat Loss Workout</h2>
-<ul>
-<li>Jumping Jacks - 1 min</li>
-<li>Burpees - 10 reps</li>
-<li>Mountain Climbers - 30 sec</li>
-<li>Squats - 20 reps</li>
-</ul>
+
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=200&q=80">
+<p>Jumping Jacks — 1 min</p>
 </div>
 
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=200&q=80">
+<p>Burpees — 10 reps</p>
+</div>
+
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=200&q=80">
+<p>Mountain Climbers — 30 sec</p>
+</div>
+
+</div>
+
+<!-- MUSCLE -->
 <div class="card">
 <h2>Muscle Building</h2>
-<ul>
-<li>Push-ups - 20 reps</li>
-<li>Dumbbell Curls - 12 reps</li>
-<li>Pull-ups - 10 reps</li>
-<li>Plank - 1 min</li>
-</ul>
+
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=200&q=80">
+<p>Push-ups — 20 reps</p>
+</div>
+
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=200&q=80">
+<p>Dumbbell Curls — 12 reps</p>
+</div>
+
+<div class="exercise">
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=200&q=80">
+<p>Plank — 1 min</p>
+</div>
+
 </div>
 
 <a href="index.html">⬅ Back to Home</a>
